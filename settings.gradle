@@ -1,0 +1,1 @@
+include ':app', ':qa_master', ':qa_slave'
