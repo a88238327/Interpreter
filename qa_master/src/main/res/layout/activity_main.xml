@@ -8,74 +8,185 @@
     android:orientation="vertical">
 
     <ScrollView
+        android:id="@+id/checkbox"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_heightPercent="87.5%"
-        app:layout_widthPercent="87.5%"
+        app:layout_widthPercent="90%"
         android:background="@drawable/chatbox"></ScrollView>
     <com.zhy.android.percent.support.PercentFrameLayout
         android:layout_width="0dp"
-        android:layout_height="match_parent"
-        app:layout_widthPercent="12.5%"
-        app:layout_marginLeftPercent="87.5%"
+        android:layout_height="0dp"
+        app:layout_widthPercent="10%"
+        app:layout_heightPercent="87.5%"
+        app:layout_marginLeftPercent="90%"
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/restart"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@mipmap/restart" />
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@mipmap/restart_false" />
+
         <ImageView
-            android:layout_marginTop="10dp"
-            app:layout_marginTopPercent="37.5%"
-            android:layout_marginLeft="10dp"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@mipmap/mic" />
-        <ImageView
-            android:layout_marginTop="10dp"
-            app:layout_marginTopPercent="62.5%"
-            android:layout_marginLeft="10dp"
+            android:id="@+id/next"
+            android:layout_gravity="center_horizontal"
+            app:layout_marginTopPercent="50%"
             android:layout_width="72dp"
             android:layout_height="28dp"
-            android:background="@mipmap/next" />
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/next_false" />
+        <ImageView
+            android:id="@+id/mic"
+            android:layout_gravity="center_horizontal"
+            app:layout_marginTopPercent="75%"
+            android:transformPivotY="70dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@mipmap/mic_false" />
     </com.zhy.android.percent.support.PercentFrameLayout>
-
-    <LinearLayout
-        android:orientation="vertical"
+    <com.zhy.android.percent.support.PercentFrameLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_heightPercent="12.5%"
         app:layout_widthPercent="37.5%"
         app:layout_marginTopPercent="87.5%">
 
-
         <ImageView
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center_horizontal"
-            app:layout_marginTopPercent="62.5%"
-            android:layout_width="143.5dp"
-            android:layout_height="35dp"
-            android:background="@mipmap/check_false" />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
+            android:id="@+id/checkbutton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="70%"
+            app:layout_widthPercent="50%"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@mipmap/check_false"
+            android:scaleType="fitXY" />
+    </com.zhy.android.percent.support.PercentFrameLayout>
+    <com.zhy.android.percent.support.PercentFrameLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_heightPercent="12.5%"
         app:layout_widthPercent="37.5%"
+        android:orientation="vertical"
         app:layout_marginTopPercent="87.5%"
         app:layout_marginLeftPercent="50%">
 
         <ImageView
-            android:layout_marginTop="5dp"
-            android:layout_gravity="center_horizontal"
-            app:layout_marginTopPercent="62.5%"
-            android:layout_width="143.5dp"
-            android:layout_height="35dp"
-            android:background="@mipmap/quick_false" />
-    </LinearLayout>
+            android:id="@+id/quickbuttom"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="70%"
+            app:layout_widthPercent="50%"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:background="@mipmap/quick_false"
+            android:scaleType="fitXY" />
+    </com.zhy.android.percent.support.PercentFrameLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="87.5%"
+        app:layout_widthPercent="90%"
+        android:background="@color/gray">
 
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/list_false">
+            <LinearLayout
+                android:id="@+id/check_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_false"
+                    android:padding="30dp"
+                    android:text="检查问题"
+                    android:maxEms="5"
+                    android:textStyle="bold"
+                    android:textSize="36sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_false"
+                    android:padding="30dp"
+                    android:text="检查问题"
+                    android:maxEms="5"
+                    android:textStyle="bold"
+                    android:textSize="36sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_false"
+                    android:padding="30dp"
+                    android:text="检查问题"
+                    android:maxEms="5"
+                    android:textStyle="bold"
+                    android:textSize="36sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_true"
+                    android:padding="30dp"
+                    android:text="检查问题"
+                    android:textStyle="bold"
+                    android:maxEms="5"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_false"
+                    android:padding="30dp"
+                    android:text="检查问题"
+                    android:maxEms="5"
+                    android:textStyle="bold"
+                    android:textSize="36sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_false"
+                    android:padding="30dp"
+                    android:text="检查问题"
+                    android:maxEms="5"
+                    android:textStyle="bold"
+                    android:textSize="36sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_false"
+                    android:padding="30dp"
+                    android:text="检查问题"
+                    android:maxEms="5"
+                    android:textStyle="bold"
+                    android:textSize="36sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_false"
+                    android:padding="30dp"
+                    android:text="检查问题"
+                    android:maxEms="5"
+                    android:textStyle="bold"
+                    android:textSize="36sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_false"
+                    android:padding="30dp"
+                    android:text="检查问题"
+                    android:maxEms="5"
+                    android:textStyle="bold"
+                    android:textSize="36sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
 
 </com.zhy.android.percent.support.PercentFrameLayout>
