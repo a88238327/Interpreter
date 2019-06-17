@@ -4,47 +4,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
     android:orientation="vertical">
 
-    <com.zhy.android.percent.support.PercentFrameLayout
+    <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:background="#ff44aacc"
-        app:layout_heightPercent="50%w"
-        app:layout_widthPercent="50%w">
+        app:layout_heightPercent="87.5%"
+        app:layout_widthPercent="87.5%"
+        android:background="@drawable/chatbox"></ScrollView>
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_widthPercent="12.5%"
+        app:layout_marginLeftPercent="87.5%"
+        android:orientation="vertical">
 
-        <com.zhy.android.percent.support.PercentFrameLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:background="#ffcc5ec7"
-            app:layout_heightPercent="50%w"
-            app:layout_widthPercent="50%w">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:background="#ff7ecc16"
-                android:gravity="center"
-                android:text="margin 15% of w"
-                app:layout_marginPercent="15%w"
-                />
-
-        </com.zhy.android.percent.support.PercentFrameLayout>
-
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@mipmap/restart" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            app:layout_marginTopPercent="37.5%"
+            android:layout_marginLeft="10dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@mipmap/mic" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            app:layout_marginTopPercent="62.5%"
+            android:layout_marginLeft="10dp"
+            android:layout_width="72dp"
+            android:layout_height="28dp"
+            android:background="@mipmap/next" />
     </com.zhy.android.percent.support.PercentFrameLayout>
 
-    <TextView android:layout_width="0dp"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_gravity="bottom|right"
-        android:background="#44ff0000"
-        android:gravity="center"
-        android:text="15%w,15%w"
-        app:layout_heightPercent="15%w"
-        app:layout_marginPercent="5%w"
-        app:layout_widthPercent="15%w"/>
+        app:layout_heightPercent="12.5%"
+        app:layout_widthPercent="37.5%"
+        app:layout_marginTopPercent="87.5%">
+
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_marginTopPercent="62.5%"
+            android:layout_width="143.5dp"
+            android:layout_height="35dp"
+            android:background="@mipmap/check_false" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12.5%"
+        app:layout_widthPercent="37.5%"
+        app:layout_marginTopPercent="87.5%"
+        app:layout_marginLeftPercent="50%">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            app:layout_marginTopPercent="62.5%"
+            android:layout_width="143.5dp"
+            android:layout_height="35dp"
+            android:background="@mipmap/quick_false" />
+    </LinearLayout>
 
 
 </com.zhy.android.percent.support.PercentFrameLayout>
